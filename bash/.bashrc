@@ -112,22 +112,26 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 # sources /etc/bash.bashrc).
 if ! shopt -oq posix; then
   if [ -f /usr/share/bash-completion/bash_completion ]; then
+    # shellcheck disable=SC1091
     . /usr/share/bash-completion/bash_completion
   elif [ -f /etc/bash_completion ]; then
+    # shellcheck disable=SC1091
     . /etc/bash_completion
   fi
 fi
 
 # Support for asdf (https://asdf-vm.com)
 if [ -f "$HOME/.asdf/asdf.sh" ]; then
+    # shellcheck disable=SC1091
     . "$HOME/.asdf/asdf.sh"
 fi
 if [ -f "$HOME/.asdf/completions/asdf.bash" ]; then
+    # shellcheck disable=SC1091
     . "$HOME/.asdf/completions/asdf.bash"
 fi
 
 # Rust support
 if [ -f "$HOME/.cargo/env" ]; then
-# shellcheck disable=SC1091
+    # shellcheck disable=SC1091
     . "$HOME/.cargo/env"
 fi
