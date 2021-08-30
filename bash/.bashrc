@@ -135,3 +135,8 @@ if [ -f "$HOME/.cargo/env" ]; then
     # shellcheck disable=SC1091
     . "$HOME/.cargo/env"
 fi
+
+# Netlify support
+if [ -x "$(command -v netlify)" ]; then
+    eval "$(netlify completion:generate --shell=bash)"
+fi
