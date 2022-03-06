@@ -27,3 +27,6 @@ fi
 if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
+
+# Poetry
+export PATH="$HOME/.poetry/bin:$PATH"
