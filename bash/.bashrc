@@ -133,12 +133,6 @@ if [ -f "$HOME/.asdf/completions/asdf.bash" ]; then
     . "$HOME/.asdf/completions/asdf.bash"
 fi
 
-# Rust support
-if [ -f "$HOME/.cargo/env" ]; then
-    # shellcheck disable=SC1091
-    . "$HOME/.cargo/env"
-fi
-
 # Netlify support
 if [ -x "$(command -v netlify)" ]; then
     eval "$(netlify completion:generate --shell=bash)"
