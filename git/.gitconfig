@@ -3,3 +3,5 @@
 	name = Avery Larsen
 [commit]
 	verbose = true
+[init]
+	defaultBranch = main
