@@ -1,7 +1,15 @@
 [user]
-	email = hello@averylarsen.com
-	name = Avery Larsen
+        name = Avery Larsen
+        email = averylarsen@mailbox.org
 [commit]
-	verbose = true
+        verbose = true
+        gpgSign = true
+[core]
+        autocrlf = false
+        filemode = false
+        longpaths = true
+[branch]
+        autoSetupRebase = always
+        autoSetupMerge = always
 [init]
-	defaultBranch = main
+        defaultBranch = main
